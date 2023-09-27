@@ -1,0 +1,13 @@
+prefix=/Users/sanchitdawar/Desktop/Retro-Data/env
+exec_prefix=/Users/sanchitdawar/Desktop/Retro-Data/env
+libdir=/Users/sanchitdawar/Desktop/Retro-Data/env/lib
+sharedlibdir=/Users/sanchitdawar/Desktop/Retro-Data/env/lib
+includedir=/Users/sanchitdawar/Desktop/Retro-Data/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
