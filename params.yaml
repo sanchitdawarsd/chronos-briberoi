@@ -37,7 +37,7 @@ api:
 files:
   epoch_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/epoch.csv
   epoch_daily_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/epoch_daily.csv
-  id_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/ids_data.csv
+  id_data: https://raw.githubusercontent.com/sanchitdawarsd/chronos-briberoi/main/data/ids_data.csv
   daily_data_fusion: https://docs.google.com/spreadsheets/d/1ksiupEzlwVBMmrE9OkBnoFeBkLT0_iOpR3p6OY4MPZI/export?format=csv
   pair_data_fusion: https://docs.google.com/spreadsheets/d/1j0242nHZD9Qz01mwYOLUfc9uLL17_2IKq5tx5dxw_Dg/export?format=csv
   bribe_data: R-https://docs.google.com/spreadsheets/d/1RgjgydeakduCgww1kyJdAJGI594VjJCVsm8-dNUeSzM/export?format=csv

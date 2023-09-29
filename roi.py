@@ -34,10 +34,10 @@ try:
 
     # Pulling Pair Data
     logger.info("Pair Data Fusion Started")
-
+    print("data")
     # Request and Edit Pair Data
     ids_df = pd.read_csv(id_data)
-
+    print(ids_df, "dat2a")
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
     twodayago = todayDate - timedelta(2)
