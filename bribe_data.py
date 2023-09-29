@@ -62,6 +62,7 @@ try:
     w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
 
     bribes_list = []
+    print(ids_df)
     for name, bribe_ca in zip(ids_df["symbol"], ids_df["gauge.bribe"]):
         if bribe_ca == "0x0000000000000000000000000000000000000000":
             pass
@@ -132,7 +133,6 @@ try:
         "bribe_amount",
         "epoch",
     ]
-    print(bribe_df)
 
     # Rewriting current Epoch's Bribe Data
     bribor = pd.read_csv(bribe_csv)
@@ -149,7 +149,7 @@ try:
     # Open a google sheet
     sheetkey = config["gsheets"]["bribe_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
-
+    print(bribe_df)
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
     if index_list != []:

@@ -16,3 +16,10 @@
 +defaults/osx-arm64::xz-5.4.2-h80987f9_0
 +defaults/osx-arm64::zlib-1.2.13-h5a0b063_0
 # update specs: ['python=3.8']
+==> 2023-09-28 09:46:20 <==
+# cmd: /Users/sanchitdawar/miniconda3/bin/conda install --prefix /Users/sanchitdawar/Desktop/Retro-Data/env autopep8 -y
+# conda version: 23.5.2
++defaults/noarch::autopep8-1.6.0-pyhd3eb1b0_1
++defaults/noarch::toml-0.10.2-pyhd3eb1b0_0
++defaults/osx-arm64::pycodestyle-2.10.0-py38hca03da5_0
+# update specs: ['autopep8']

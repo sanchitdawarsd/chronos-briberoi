@@ -23,11 +23,14 @@ try:
     fusion_api = config["api"]["fusion_api"]
 
     # Request
-    response = requests.get(url=fusion_api)
+    response = requests.get(url=fusion_api, timeout=10)
     data = response.json()["data"]
-    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
+    print(response)
+    ids_df = pd.json_normalize(response.json()['data'])[
+        ['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     ids_df.to_csv("data/ids_data.csv", index=False)
 
     logger.info("ID Data Ended")
 except Exception as e:
-    logger.error("Error occurred during ID Data process. Error: %s" % e, exc_info=True)
+    logger.error("Error occurred during ID Data process. Error: %s" %
+                 e, exc_info=True)

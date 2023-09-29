@@ -37874,3 +37874,658 @@ Traceback (most recent call last):
   File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/compat/_optional.py", line 144, in import_optional_dependency
     raise ImportError(msg)
 ImportError: Missing optional dependency 'fsspec'.  Use pip or conda to install fsspec.
+[2023-09-27 10:58:43,192] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:00:07,621] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:00:39,868] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:11:26,057] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:11:37,574] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:19:58,430] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:27:48,305] 	ERROR 	165 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Missing optional dependency 'fsspec'.  Use pip or conda to install fsspec.
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/compat/_optional.py", line 141, in import_optional_dependency
+    module = importlib.import_module(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'fsspec'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/bribe_data.py", line 139, in <module>
+    bribor = pd.read_csv(bribe_csv)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 388, in _get_filepath_or_buffer
+    fsspec = import_optional_dependency("fsspec")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/compat/_optional.py", line 144, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'fsspec'.  Use pip or conda to install fsspec.
+[2023-09-27 11:55:15,312] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-27 11:57:45,442] 	ERROR 	164 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: <urlopen error [Errno 60] Operation timed out>
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1451, in connect
+    super().connect()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/bribe_data.py", line 38, in <module>
+    ids_df = pd.read_csv(id_data)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 60] Operation timed out>
+[2023-09-27 18:04:28,277] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-28 09:28:14,052] 	INFO 	36 	historical_bribes.py 	<module>() 	Bribe Data Started
+[2023-09-28 09:30:44,087] 	ERROR 	164 	historical_bribes.py 	<module>() 	Error occurred during Bribe Data process. Error: <urlopen error [Errno 60] Operation timed out>
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1286, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1332, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1041, in _send_output
+    self.send(msg)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 979, in send
+    self.connect()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 1451, in connect
+    super().connect()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/http/client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/historical_bribes.py", line 38, in <module>
+    ids_df = pd.read_csv(id_data)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 60] Operation timed out>
+[2023-09-28 11:22:00,388] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:23:21,386] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:25:10,037] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:25:31,009] 	INFO 	32 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-28 11:25:53,187] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:26:14,254] 	INFO 	33 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-28 11:27:10,722] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:27:31,807] 	INFO 	33 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-28 11:29:25,073] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-28 11:29:46,030] 	INFO 	33 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-29 14:37:58,640] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:39:08,031] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:39:10,582] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:39:11,050] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:39:11,521] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:39:12,001] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:39:12,483] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:39:12,970] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:39:13,452] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:39:13,934] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:39:14,419] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:39:15,179] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:39:15,661] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:39:16,144] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:39:16,653] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:39:17,140] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:39:17,617] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:39:18,090] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:39:18,604] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:39:19,101] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:39:19,592] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:39:20,083] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:39:20,727] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:39:21,221] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:39:21,730] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:39:22,446] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:39:22,957] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:39:23,543] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0xc38727c79d18e6b5c991cebadfbf7a4815c022cc, Error: 'data'
+[2023-09-29 14:39:24,158] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/agEUR (1%), Address: 0x24d94c40a5061d9c8ae35c8fa45002f6b65fd978, Error: 'data'
+[2023-09-29 14:39:24,639] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/USDT (0.01%), Address: 0xa7565dfeb16010153d3368e002ec53cbfaf96e05, Error: 'data'
+[2023-09-29 14:39:25,131] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/DAI (0.01%), Address: 0x47884ccf20765a6b3b53333b752b28bba48c5ea9, Error: 'data'
+[2023-09-29 14:39:25,621] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/MaticX (0.01%), Address: 0x2589469b7a72802ce02484f053cb6df869eb2689, Error: 'data'
+[2023-09-29 14:39:26,273] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0x29e32ce44f0375bc798b9965845e0db32f5017ce, Error: 'data'
+[2023-09-29 14:39:26,930] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/stMATIC (0.01%), Address: 0xcdedc76bcc6351275acdef823190453ec43b4edf, Error: 'data'
+[2023-09-29 14:39:27,421] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0x184a51465925ab8a0025e47a00cab6d3769b5487, Error: 'data'
+[2023-09-29 14:39:27,979] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x1c5d12ad73875cda81d1dd7b09b994ee3b31bfc5, Error: 'data'
+[2023-09-29 14:39:28,458] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/frxETH (0.05%), Address: 0x517e0971afe8c7633937715d9f3271e930bec372, Error: 'data'
+[2023-09-29 14:39:28,932] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x2be6f30d8b7cc563bbf2fa8cc48713409940adb5, Error: 'data'
+[2023-09-29 14:39:29,396] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x44903e0b2a017f9a9bd299925649e1d1896de409, Error: 'data'
+[2023-09-29 14:39:30,052] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0x5b1c4eb4e2a8faa1dcda68f9f29e00d586f57495, Error: 'data'
+[2023-09-29 14:39:30,565] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0x80e0b01044978b45accf33a74586c02ec6473f48, Error: 'data'
+[2023-09-29 14:39:31,057] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xe193c653b6030a9bb443ae7c6ef6e35d93348f98, Error: 'data'
+[2023-09-29 14:39:31,541] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/miMATIC (0.3%), Address: 0xea3e41a9f4eb139ba61bf8566aa1baad195c5511, Error: 'data'
+[2023-09-29 14:39:31,997] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x2a64d756c45e4dce6ab8be73ece8e6c929f65b47, Error: 'data'
+[2023-09-29 14:39:32,468] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: oRETRO/RETRO (1%), Address: 0x21e84500d8503fd5e48523ba046032a37bbc2d51, Error: 'data'
+[2023-09-29 14:39:32,941] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0x92a6576c750d94ba5156f035f5cd5c89c4c2f64d, Error: 'data'
+[2023-09-29 14:39:33,446] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x0e4ab9d6e7ed13d43b5877c4aa14e1f2151f79ed, Error: 'data'
+[2023-09-29 14:39:34,071] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0x4621dd5727ba5dc6ac5dce8a2bf754d6558217e4, Error: 'data'
+[2023-09-29 14:39:34,586] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0xcfcd44a154ac3c09187c7f14b2ec386ff3487a0a, Error: 'data'
+[2023-09-29 14:39:35,075] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0xb398868b8f58840a64405ef178fc504838ba9469, Error: 'data'
+[2023-09-29 14:39:35,768] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (0.3%), Address: 0xe89fd7b0199c5397c2814693d0206c19a92badda, Error: 'data'
+[2023-09-29 14:39:36,264] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x28552601cd3f786a40b110000e5ac115af415458, Error: 'data'
+[2023-09-29 14:39:36,732] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0xda59e221aa15007a8766d9bb1be622ffe9128f96, Error: 'data'
+[2023-09-29 14:39:37,244] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0x0af68a4679f49fde30e96046d5775f1b53ffc6ac, Error: 'data'
+[2023-09-29 14:39:37,741] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0xf36bd23e5c69d59cfa00a12d34cd9fabac3e3f64, Error: 'data'
+[2023-09-29 14:39:38,242] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xbfd344c1f8664b5e1a8be936ce9ae2dfd1073661, Error: 'data'
+[2023-09-29 14:39:38,790] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0xce58cd86a6043973a96a6a2a50ef1f6351d7dbce, Error: 'data'
+[2023-09-29 14:39:39,286] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0xbc427850ebb87a9158b6d48fcb16cbd732d8a844, Error: 'data'
+[2023-09-29 14:39:39,773] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x26304acfd64deea7f585fad9e56e4a5b2fa7443d, Error: 'data'
+[2023-09-29 14:39:40,260] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/STAR (0.01%), Address: 0xf10988a2443efad084a909271ad7a4e09b043f58, Error: 'data'
+[2023-09-29 14:39:40,760] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xb14780ba4f6575bf971c6c131e0682afe44f49d8, Error: 'data'
+[2023-09-29 14:39:41,267] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x58d9c906d69ef796271706017d317e84cb8127a8, Error: 'data'
+[2023-09-29 14:39:41,768] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (1%), Address: 0x150d0e48cd05628b43ad44bdd0984acacd44013c, Error: 'data'
+[2023-09-29 14:39:42,270] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/ERN (1%), Address: 0xbd4a066bf8f6ab0e64a499ba6219d02041569dca, Error: 'data'
+[2023-09-29 14:39:43,337] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (1%), Address: 0xb73995a68ac03f17f17d73299363af817b29859b, Error: 'data'
+[2023-09-29 14:39:43,860] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x3f8f3caeff393b1994a9968e835fd38ecba6c1be, Error: 'data'
+[2023-09-29 14:39:44,363] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0x33a77bf60c97f8dcaa06307c019862376fbc99bb, Error: 'data'
+[2023-09-29 14:39:44,883] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/STAR (0.3%), Address: 0x4e3019be228b980dff03b5a00ac9e736312be559, Error: 'data'
+[2023-09-29 14:39:45,451] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x9bea41c900394f83375b9198d04be6f63db00090, Error: 'data'
+[2023-09-29 14:39:45,956] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aeb0667b79584fbf6265b74a8cd22e1245fdc, Error: 'data'
+[2023-09-29 14:39:46,465] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4b895a0dd744b4893aa4370a8f7edbde5fd90e, Error: 'data'
+[2023-09-29 14:39:46,951] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x439e2d51ba26fa062a1e4f0edaa68f3b830ca6da, Error: 'data'
+[2023-09-29 14:39:47,444] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xcc72276de3bcc1b159f1b60a86b0211116022b42, Error: 'data'
+[2023-09-29 14:39:47,963] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0xb72395c6a7effbdc89aa9effb49797195e790287, Error: 'data'
+[2023-09-29 14:39:48,460] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44d18b2bac767cddb4cdbf, Error: 'data'
+[2023-09-29 14:39:48,948] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/IBEX (1%), Address: 0x53d8c25b3d130d2810591cdc7a41bd848bf79b63, Error: 'data'
+[2023-09-29 14:39:48,949] 	INFO 	116 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-29 14:46:33,816] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:46:35,251] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:46:35,728] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:46:36,213] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:46:36,706] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:46:37,200] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:46:37,711] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:46:38,218] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:46:38,723] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:46:39,379] 	ERROR 	68 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:47:22,697] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:47:41,710] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:47:55,301] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:47:55,775] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:47:56,299] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:47:56,762] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:47:57,396] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:47:57,871] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:47:58,369] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:47:58,868] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:47:59,356] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:47:59,833] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:48:00,340] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:48:00,854] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:48:01,359] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:48:01,829] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:48:02,315] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:48:02,799] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:48:03,278] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:48:03,775] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:48:04,267] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:48:04,736] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:48:05,395] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:48:05,915] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:48:06,437] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:48:06,924] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:48:07,412] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0xc38727c79d18e6b5c991cebadfbf7a4815c022cc, Error: 'data'
+[2023-09-29 14:48:08,170] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/agEUR (1%), Address: 0x24d94c40a5061d9c8ae35c8fa45002f6b65fd978, Error: 'data'
+[2023-09-29 14:48:08,692] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/USDT (0.01%), Address: 0xa7565dfeb16010153d3368e002ec53cbfaf96e05, Error: 'data'
+[2023-09-29 14:48:09,209] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/DAI (0.01%), Address: 0x47884ccf20765a6b3b53333b752b28bba48c5ea9, Error: 'data'
+[2023-09-29 14:48:09,687] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/MaticX (0.01%), Address: 0x2589469b7a72802ce02484f053cb6df869eb2689, Error: 'data'
+[2023-09-29 14:48:10,176] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0x29e32ce44f0375bc798b9965845e0db32f5017ce, Error: 'data'
+[2023-09-29 14:48:10,686] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/stMATIC (0.01%), Address: 0xcdedc76bcc6351275acdef823190453ec43b4edf, Error: 'data'
+[2023-09-29 14:48:11,194] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0x184a51465925ab8a0025e47a00cab6d3769b5487, Error: 'data'
+[2023-09-29 14:48:11,704] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x1c5d12ad73875cda81d1dd7b09b994ee3b31bfc5, Error: 'data'
+[2023-09-29 14:48:12,203] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/frxETH (0.05%), Address: 0x517e0971afe8c7633937715d9f3271e930bec372, Error: 'data'
+[2023-09-29 14:48:12,697] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x2be6f30d8b7cc563bbf2fa8cc48713409940adb5, Error: 'data'
+[2023-09-29 14:48:13,318] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x44903e0b2a017f9a9bd299925649e1d1896de409, Error: 'data'
+[2023-09-29 14:48:13,784] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0x5b1c4eb4e2a8faa1dcda68f9f29e00d586f57495, Error: 'data'
+[2023-09-29 14:48:14,269] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0x80e0b01044978b45accf33a74586c02ec6473f48, Error: 'data'
+[2023-09-29 14:48:14,766] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xe193c653b6030a9bb443ae7c6ef6e35d93348f98, Error: 'data'
+[2023-09-29 14:48:15,245] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/miMATIC (0.3%), Address: 0xea3e41a9f4eb139ba61bf8566aa1baad195c5511, Error: 'data'
+[2023-09-29 14:48:15,703] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x2a64d756c45e4dce6ab8be73ece8e6c929f65b47, Error: 'data'
+[2023-09-29 14:48:16,172] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: oRETRO/RETRO (1%), Address: 0x21e84500d8503fd5e48523ba046032a37bbc2d51, Error: 'data'
+[2023-09-29 14:48:16,694] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0x92a6576c750d94ba5156f035f5cd5c89c4c2f64d, Error: 'data'
+[2023-09-29 14:48:17,212] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x0e4ab9d6e7ed13d43b5877c4aa14e1f2151f79ed, Error: 'data'
+[2023-09-29 14:48:17,785] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0x4621dd5727ba5dc6ac5dce8a2bf754d6558217e4, Error: 'data'
+[2023-09-29 14:48:18,260] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0xcfcd44a154ac3c09187c7f14b2ec386ff3487a0a, Error: 'data'
+[2023-09-29 14:48:18,770] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0xb398868b8f58840a64405ef178fc504838ba9469, Error: 'data'
+[2023-09-29 14:48:19,325] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (0.3%), Address: 0xe89fd7b0199c5397c2814693d0206c19a92badda, Error: 'data'
+[2023-09-29 14:48:19,886] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x28552601cd3f786a40b110000e5ac115af415458, Error: 'data'
+[2023-09-29 14:48:20,449] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0xda59e221aa15007a8766d9bb1be622ffe9128f96, Error: 'data'
+[2023-09-29 14:48:21,360] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0x0af68a4679f49fde30e96046d5775f1b53ffc6ac, Error: 'data'
+[2023-09-29 14:48:21,839] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0xf36bd23e5c69d59cfa00a12d34cd9fabac3e3f64, Error: 'data'
+[2023-09-29 14:48:22,313] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xbfd344c1f8664b5e1a8be936ce9ae2dfd1073661, Error: 'data'
+[2023-09-29 14:48:22,798] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0xce58cd86a6043973a96a6a2a50ef1f6351d7dbce, Error: 'data'
+[2023-09-29 14:48:23,300] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0xbc427850ebb87a9158b6d48fcb16cbd732d8a844, Error: 'data'
+[2023-09-29 14:48:23,781] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x26304acfd64deea7f585fad9e56e4a5b2fa7443d, Error: 'data'
+[2023-09-29 14:48:24,257] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/STAR (0.01%), Address: 0xf10988a2443efad084a909271ad7a4e09b043f58, Error: 'data'
+[2023-09-29 14:48:24,749] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xb14780ba4f6575bf971c6c131e0682afe44f49d8, Error: 'data'
+[2023-09-29 14:48:25,239] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x58d9c906d69ef796271706017d317e84cb8127a8, Error: 'data'
+[2023-09-29 14:48:25,717] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (1%), Address: 0x150d0e48cd05628b43ad44bdd0984acacd44013c, Error: 'data'
+[2023-09-29 14:48:26,196] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/ERN (1%), Address: 0xbd4a066bf8f6ab0e64a499ba6219d02041569dca, Error: 'data'
+[2023-09-29 14:48:26,707] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (1%), Address: 0xb73995a68ac03f17f17d73299363af817b29859b, Error: 'data'
+[2023-09-29 14:48:27,191] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x3f8f3caeff393b1994a9968e835fd38ecba6c1be, Error: 'data'
+[2023-09-29 14:48:27,666] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0x33a77bf60c97f8dcaa06307c019862376fbc99bb, Error: 'data'
+[2023-09-29 14:48:28,244] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/STAR (0.3%), Address: 0x4e3019be228b980dff03b5a00ac9e736312be559, Error: 'data'
+[2023-09-29 14:48:28,744] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x9bea41c900394f83375b9198d04be6f63db00090, Error: 'data'
+[2023-09-29 14:48:29,297] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aeb0667b79584fbf6265b74a8cd22e1245fdc, Error: 'data'
+[2023-09-29 14:48:29,825] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4b895a0dd744b4893aa4370a8f7edbde5fd90e, Error: 'data'
+[2023-09-29 14:48:30,301] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x439e2d51ba26fa062a1e4f0edaa68f3b830ca6da, Error: 'data'
+[2023-09-29 14:48:30,785] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xcc72276de3bcc1b159f1b60a86b0211116022b42, Error: 'data'
+[2023-09-29 14:48:31,385] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0xb72395c6a7effbdc89aa9effb49797195e790287, Error: 'data'
+[2023-09-29 14:48:31,854] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44d18b2bac767cddb4cdbf, Error: 'data'
+[2023-09-29 14:48:32,542] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/IBEX (1%), Address: 0x53d8c25b3d130d2810591cdc7a41bd848bf79b63, Error: 'data'
+[2023-09-29 14:48:32,542] 	INFO 	117 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-29 14:51:24,244] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:51:28,183] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:51:28,706] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:51:29,213] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:51:29,710] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:51:30,203] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:51:30,813] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:51:31,302] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:51:31,943] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:51:32,477] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:51:32,958] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:51:33,599] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:51:34,086] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:51:34,594] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:51:35,061] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:51:35,517] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:51:35,994] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:51:36,509] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:51:37,007] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:51:37,487] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:51:38,043] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:51:38,557] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:51:39,058] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:51:39,549] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:51:40,057] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:51:40,715] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:51:41,267] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0xc38727c79d18e6b5c991cebadfbf7a4815c022cc, Error: 'data'
+[2023-09-29 14:51:41,772] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/agEUR (1%), Address: 0x24d94c40a5061d9c8ae35c8fa45002f6b65fd978, Error: 'data'
+[2023-09-29 14:51:42,288] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/USDT (0.01%), Address: 0xa7565dfeb16010153d3368e002ec53cbfaf96e05, Error: 'data'
+[2023-09-29 14:51:42,827] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/DAI (0.01%), Address: 0x47884ccf20765a6b3b53333b752b28bba48c5ea9, Error: 'data'
+[2023-09-29 14:51:43,581] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/MaticX (0.01%), Address: 0x2589469b7a72802ce02484f053cb6df869eb2689, Error: 'data'
+[2023-09-29 14:51:44,109] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0x29e32ce44f0375bc798b9965845e0db32f5017ce, Error: 'data'
+[2023-09-29 14:51:44,917] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/stMATIC (0.01%), Address: 0xcdedc76bcc6351275acdef823190453ec43b4edf, Error: 'data'
+[2023-09-29 14:51:45,440] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0x184a51465925ab8a0025e47a00cab6d3769b5487, Error: 'data'
+[2023-09-29 14:51:45,953] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x1c5d12ad73875cda81d1dd7b09b994ee3b31bfc5, Error: 'data'
+[2023-09-29 14:51:46,431] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/frxETH (0.05%), Address: 0x517e0971afe8c7633937715d9f3271e930bec372, Error: 'data'
+[2023-09-29 14:51:46,949] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x2be6f30d8b7cc563bbf2fa8cc48713409940adb5, Error: 'data'
+[2023-09-29 14:51:47,479] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x44903e0b2a017f9a9bd299925649e1d1896de409, Error: 'data'
+[2023-09-29 14:51:47,954] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0x5b1c4eb4e2a8faa1dcda68f9f29e00d586f57495, Error: 'data'
+[2023-09-29 14:51:48,451] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0x80e0b01044978b45accf33a74586c02ec6473f48, Error: 'data'
+[2023-09-29 14:51:48,954] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xe193c653b6030a9bb443ae7c6ef6e35d93348f98, Error: 'data'
+[2023-09-29 14:51:49,619] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/miMATIC (0.3%), Address: 0xea3e41a9f4eb139ba61bf8566aa1baad195c5511, Error: 'data'
+[2023-09-29 14:51:50,160] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x2a64d756c45e4dce6ab8be73ece8e6c929f65b47, Error: 'data'
+[2023-09-29 14:51:50,687] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: oRETRO/RETRO (1%), Address: 0x21e84500d8503fd5e48523ba046032a37bbc2d51, Error: 'data'
+[2023-09-29 14:51:51,335] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0x92a6576c750d94ba5156f035f5cd5c89c4c2f64d, Error: 'data'
+[2023-09-29 14:51:51,833] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x0e4ab9d6e7ed13d43b5877c4aa14e1f2151f79ed, Error: 'data'
+[2023-09-29 14:51:52,359] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0x4621dd5727ba5dc6ac5dce8a2bf754d6558217e4, Error: 'data'
+[2023-09-29 14:51:52,864] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0xcfcd44a154ac3c09187c7f14b2ec386ff3487a0a, Error: 'data'
+[2023-09-29 14:51:53,397] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0xb398868b8f58840a64405ef178fc504838ba9469, Error: 'data'
+[2023-09-29 14:51:53,924] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (0.3%), Address: 0xe89fd7b0199c5397c2814693d0206c19a92badda, Error: 'data'
+[2023-09-29 14:51:54,418] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x28552601cd3f786a40b110000e5ac115af415458, Error: 'data'
+[2023-09-29 14:51:54,899] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0xda59e221aa15007a8766d9bb1be622ffe9128f96, Error: 'data'
+[2023-09-29 14:51:55,394] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0x0af68a4679f49fde30e96046d5775f1b53ffc6ac, Error: 'data'
+[2023-09-29 14:51:55,915] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0xf36bd23e5c69d59cfa00a12d34cd9fabac3e3f64, Error: 'data'
+[2023-09-29 14:51:56,407] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xbfd344c1f8664b5e1a8be936ce9ae2dfd1073661, Error: 'data'
+[2023-09-29 14:51:56,935] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0xce58cd86a6043973a96a6a2a50ef1f6351d7dbce, Error: 'data'
+[2023-09-29 14:51:57,468] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0xbc427850ebb87a9158b6d48fcb16cbd732d8a844, Error: 'data'
+[2023-09-29 14:51:57,963] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x26304acfd64deea7f585fad9e56e4a5b2fa7443d, Error: 'data'
+[2023-09-29 14:51:58,453] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/STAR (0.01%), Address: 0xf10988a2443efad084a909271ad7a4e09b043f58, Error: 'data'
+[2023-09-29 14:51:58,965] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xb14780ba4f6575bf971c6c131e0682afe44f49d8, Error: 'data'
+[2023-09-29 14:51:59,492] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x58d9c906d69ef796271706017d317e84cb8127a8, Error: 'data'
+[2023-09-29 14:51:59,969] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (1%), Address: 0x150d0e48cd05628b43ad44bdd0984acacd44013c, Error: 'data'
+[2023-09-29 14:52:00,507] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/ERN (1%), Address: 0xbd4a066bf8f6ab0e64a499ba6219d02041569dca, Error: 'data'
+[2023-09-29 14:52:01,001] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (1%), Address: 0xb73995a68ac03f17f17d73299363af817b29859b, Error: 'data'
+[2023-09-29 14:52:01,507] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x3f8f3caeff393b1994a9968e835fd38ecba6c1be, Error: 'data'
+[2023-09-29 14:52:01,994] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0x33a77bf60c97f8dcaa06307c019862376fbc99bb, Error: 'data'
+[2023-09-29 14:52:02,504] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/STAR (0.3%), Address: 0x4e3019be228b980dff03b5a00ac9e736312be559, Error: 'data'
+[2023-09-29 14:52:02,993] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x9bea41c900394f83375b9198d04be6f63db00090, Error: 'data'
+[2023-09-29 14:52:03,509] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aeb0667b79584fbf6265b74a8cd22e1245fdc, Error: 'data'
+[2023-09-29 14:52:04,003] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4b895a0dd744b4893aa4370a8f7edbde5fd90e, Error: 'data'
+[2023-09-29 14:52:04,494] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x439e2d51ba26fa062a1e4f0edaa68f3b830ca6da, Error: 'data'
+[2023-09-29 14:52:04,976] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xcc72276de3bcc1b159f1b60a86b0211116022b42, Error: 'data'
+[2023-09-29 14:52:05,494] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0xb72395c6a7effbdc89aa9effb49797195e790287, Error: 'data'
+[2023-09-29 14:52:05,997] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44d18b2bac767cddb4cdbf, Error: 'data'
+[2023-09-29 14:52:06,470] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/IBEX (1%), Address: 0x53d8c25b3d130d2810591cdc7a41bd848bf79b63, Error: 'data'
+[2023-09-29 14:52:06,470] 	INFO 	117 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-29 14:53:00,117] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:53:01,940] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:53:02,465] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:53:02,951] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:53:03,425] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:53:03,930] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:53:04,431] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:53:04,952] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:53:05,708] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:53:06,259] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:53:06,798] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:53:07,313] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:53:07,836] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:53:08,573] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:53:09,161] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:53:09,905] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:53:10,454] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:53:10,951] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:53:11,439] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:53:12,177] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:53:12,725] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:53:13,239] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:53:13,757] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:53:14,248] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:53:14,739] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:53:15,239] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:53:16,832] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:53:20,549] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:53:21,060] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:53:21,575] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:53:22,108] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:53:22,628] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:53:23,128] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:53:23,629] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:53:24,339] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:53:24,878] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:53:25,361] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:53:25,862] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:53:26,332] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:53:26,826] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:53:27,321] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:53:27,857] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:53:28,361] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:53:28,832] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:53:29,320] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:53:29,823] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:53:30,325] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:53:30,824] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:53:31,450] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:53:31,990] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:53:32,479] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:53:32,964] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:53:33,471] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0xc38727c79d18e6b5c991cebadfbf7a4815c022cc, Error: 'data'
+[2023-09-29 14:53:33,950] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/agEUR (1%), Address: 0x24d94c40a5061d9c8ae35c8fa45002f6b65fd978, Error: 'data'
+[2023-09-29 14:53:34,469] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/USDT (0.01%), Address: 0xa7565dfeb16010153d3368e002ec53cbfaf96e05, Error: 'data'
+[2023-09-29 14:53:34,975] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/DAI (0.01%), Address: 0x47884ccf20765a6b3b53333b752b28bba48c5ea9, Error: 'data'
+[2023-09-29 14:53:35,480] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/MaticX (0.01%), Address: 0x2589469b7a72802ce02484f053cb6df869eb2689, Error: 'data'
+[2023-09-29 14:53:35,960] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0x29e32ce44f0375bc798b9965845e0db32f5017ce, Error: 'data'
+[2023-09-29 14:53:36,475] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/stMATIC (0.01%), Address: 0xcdedc76bcc6351275acdef823190453ec43b4edf, Error: 'data'
+[2023-09-29 14:53:36,993] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0x184a51465925ab8a0025e47a00cab6d3769b5487, Error: 'data'
+[2023-09-29 14:53:37,505] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x1c5d12ad73875cda81d1dd7b09b994ee3b31bfc5, Error: 'data'
+[2023-09-29 14:53:38,026] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/frxETH (0.05%), Address: 0x517e0971afe8c7633937715d9f3271e930bec372, Error: 'data'
+[2023-09-29 14:53:38,532] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x2be6f30d8b7cc563bbf2fa8cc48713409940adb5, Error: 'data'
+[2023-09-29 14:53:39,116] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x44903e0b2a017f9a9bd299925649e1d1896de409, Error: 'data'
+[2023-09-29 14:53:39,601] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0x5b1c4eb4e2a8faa1dcda68f9f29e00d586f57495, Error: 'data'
+[2023-09-29 14:53:40,096] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0x80e0b01044978b45accf33a74586c02ec6473f48, Error: 'data'
+[2023-09-29 14:53:40,600] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xe193c653b6030a9bb443ae7c6ef6e35d93348f98, Error: 'data'
+[2023-09-29 14:53:41,072] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/miMATIC (0.3%), Address: 0xea3e41a9f4eb139ba61bf8566aa1baad195c5511, Error: 'data'
+[2023-09-29 14:53:41,558] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x2a64d756c45e4dce6ab8be73ece8e6c929f65b47, Error: 'data'
+[2023-09-29 14:53:42,061] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: oRETRO/RETRO (1%), Address: 0x21e84500d8503fd5e48523ba046032a37bbc2d51, Error: 'data'
+[2023-09-29 14:53:42,585] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0x92a6576c750d94ba5156f035f5cd5c89c4c2f64d, Error: 'data'
+[2023-09-29 14:53:43,115] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x0e4ab9d6e7ed13d43b5877c4aa14e1f2151f79ed, Error: 'data'
+[2023-09-29 14:53:43,609] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0x4621dd5727ba5dc6ac5dce8a2bf754d6558217e4, Error: 'data'
+[2023-09-29 14:53:44,103] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0xcfcd44a154ac3c09187c7f14b2ec386ff3487a0a, Error: 'data'
+[2023-09-29 14:53:44,622] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0xb398868b8f58840a64405ef178fc504838ba9469, Error: 'data'
+[2023-09-29 14:53:45,112] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (0.3%), Address: 0xe89fd7b0199c5397c2814693d0206c19a92badda, Error: 'data'
+[2023-09-29 14:53:45,604] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x28552601cd3f786a40b110000e5ac115af415458, Error: 'data'
+[2023-09-29 14:53:46,122] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0xda59e221aa15007a8766d9bb1be622ffe9128f96, Error: 'data'
+[2023-09-29 14:53:46,618] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0x0af68a4679f49fde30e96046d5775f1b53ffc6ac, Error: 'data'
+[2023-09-29 14:53:47,113] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0xf36bd23e5c69d59cfa00a12d34cd9fabac3e3f64, Error: 'data'
+[2023-09-29 14:53:47,736] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xbfd344c1f8664b5e1a8be936ce9ae2dfd1073661, Error: 'data'
+[2023-09-29 14:53:48,365] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0xce58cd86a6043973a96a6a2a50ef1f6351d7dbce, Error: 'data'
+[2023-09-29 14:53:48,866] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0xbc427850ebb87a9158b6d48fcb16cbd732d8a844, Error: 'data'
+[2023-09-29 14:53:49,377] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x26304acfd64deea7f585fad9e56e4a5b2fa7443d, Error: 'data'
+[2023-09-29 14:53:49,861] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/STAR (0.01%), Address: 0xf10988a2443efad084a909271ad7a4e09b043f58, Error: 'data'
+[2023-09-29 14:53:50,352] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xb14780ba4f6575bf971c6c131e0682afe44f49d8, Error: 'data'
+[2023-09-29 14:53:50,833] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x58d9c906d69ef796271706017d317e84cb8127a8, Error: 'data'
+[2023-09-29 14:53:51,346] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (1%), Address: 0x150d0e48cd05628b43ad44bdd0984acacd44013c, Error: 'data'
+[2023-09-29 14:53:51,847] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/ERN (1%), Address: 0xbd4a066bf8f6ab0e64a499ba6219d02041569dca, Error: 'data'
+[2023-09-29 14:53:52,605] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (1%), Address: 0xb73995a68ac03f17f17d73299363af817b29859b, Error: 'data'
+[2023-09-29 14:53:53,141] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x3f8f3caeff393b1994a9968e835fd38ecba6c1be, Error: 'data'
+[2023-09-29 14:53:53,607] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0x33a77bf60c97f8dcaa06307c019862376fbc99bb, Error: 'data'
+[2023-09-29 14:53:54,124] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/STAR (0.3%), Address: 0x4e3019be228b980dff03b5a00ac9e736312be559, Error: 'data'
+[2023-09-29 14:53:54,643] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x9bea41c900394f83375b9198d04be6f63db00090, Error: 'data'
+[2023-09-29 14:53:55,166] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aeb0667b79584fbf6265b74a8cd22e1245fdc, Error: 'data'
+[2023-09-29 14:53:55,689] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4b895a0dd744b4893aa4370a8f7edbde5fd90e, Error: 'data'
+[2023-09-29 14:53:56,240] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x439e2d51ba26fa062a1e4f0edaa68f3b830ca6da, Error: 'data'
+[2023-09-29 14:53:56,743] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xcc72276de3bcc1b159f1b60a86b0211116022b42, Error: 'data'
+[2023-09-29 14:53:57,242] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0xb72395c6a7effbdc89aa9effb49797195e790287, Error: 'data'
+[2023-09-29 14:53:57,732] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44d18b2bac767cddb4cdbf, Error: 'data'
+[2023-09-29 14:53:58,224] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/IBEX (1%), Address: 0x53d8c25b3d130d2810591cdc7a41bd848bf79b63, Error: 'data'
+[2023-09-29 14:53:58,224] 	INFO 	117 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-29 14:54:06,160] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:54:21,295] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:54:21,780] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:54:22,254] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:54:22,723] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:54:23,217] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:54:23,721] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:54:24,206] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:54:24,731] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:54:25,225] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:54:25,739] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:54:26,271] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:54:26,769] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:54:27,276] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:54:27,756] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:54:28,242] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:54:28,715] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:54:29,192] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:54:29,672] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:54:30,157] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:54:32,126] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-29 14:54:37,283] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xb38245b7fe8d594d883a27db1055bf67926f6b27, Error: 'data'
+[2023-09-29 14:54:37,782] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fe272540ecd34661b91252f2ab4b7f7a4ce, Error: 'data'
+[2023-09-29 14:54:38,327] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58eb718892da5d519587a3ec87063a8a46c9feb, Error: 'data'
+[2023-09-29 14:54:38,828] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0xe7806b5ba13d4b2ab3eab3061cb31d4a4f3390aa, Error: 'data'
+[2023-09-29 14:54:39,321] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xbe4e30b74b558e41f5837dc86562df44af57a013, Error: 'data'
+[2023-09-29 14:54:39,829] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xe058e1ffff9b13d3fcd4803fdb55d1cc2fe07ddc, Error: 'data'
+[2023-09-29 14:54:40,349] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0x336536f5bb478d8624ddce0942fdef5c92bc4662, Error: 'data'
+[2023-09-29 14:54:40,834] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0x7b4a08284a93c424c9a1fd99d04ee4e3c64b041d, Error: 'data'
+[2023-09-29 14:54:41,323] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x839d5b563e06b4abdf02d1a9d58d8ed33592c291, Error: 'data'
+[2023-09-29 14:54:41,838] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0xe933e973d1b8bea29e8cad58457200ebb670a39c, Error: 'data'
+[2023-09-29 14:54:42,483] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x64e14623ca543b540d0ba80477977f7c2c00a7ea, Error: 'data'
+[2023-09-29 14:54:42,983] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0xd24fbbaed8a380293969ed8c0ccb615e1b57d38f, Error: 'data'
+[2023-09-29 14:54:43,494] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0xc362c86432fb2d8a68f0f20c006d431e3865b112, Error: 'data'
+[2023-09-29 14:54:43,987] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xd25eddb04ccf4d3c8b0ce7cddce203bc4dc56ea4, Error: 'data'
+[2023-09-29 14:54:44,624] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xc024a13efe41e049ba0a6489dccea18432767700, Error: 'data'
+[2023-09-29 14:54:45,185] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0x98b6a5eedc9382e2c4f8a38f985f2e9ac0b0e84c, Error: 'data'
+[2023-09-29 14:54:45,691] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x35e831e7e64035b3cba93a10d0681f68d0ddec6c, Error: 'data'
+[2023-09-29 14:54:46,224] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0x11a04129c6ec84038d2d1723506c2f8d27a1a03a, Error: 'data'
+[2023-09-29 14:54:46,740] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0xcbe82a3cf40ccd4cf888bcbecea2fc18b4e4304d, Error: 'data'
+[2023-09-29 14:54:47,238] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x328832c958703375b0eda42f8bd0fcbb11879e40, Error: 'data'
+[2023-09-29 14:54:47,739] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x4fc33bdf483710f467273bd3f58acf3e7ef88e47, Error: 'data'
+[2023-09-29 14:54:48,228] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x825d9772deb8218c0a6628f76cae98e70d1b3694, Error: 'data'
+[2023-09-29 14:54:48,859] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/RETRO (1%), Address: 0xfb730ded9f9369df68f4a67633b7b3be37094ee8, Error: 'data'
+[2023-09-29 14:54:49,392] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0xb9c09ae0284ffd7094411886ec3d97962f0b5263, Error: 'data'
+[2023-09-29 14:54:49,891] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xdfc86bf44dccc9529319e4fbc9579781c9345e18, Error: 'data'
+[2023-09-29 14:54:50,392] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0xc38727c79d18e6b5c991cebadfbf7a4815c022cc, Error: 'data'
+[2023-09-29 14:54:50,907] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/agEUR (1%), Address: 0x24d94c40a5061d9c8ae35c8fa45002f6b65fd978, Error: 'data'
+[2023-09-29 14:54:51,387] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/USDT (0.01%), Address: 0xa7565dfeb16010153d3368e002ec53cbfaf96e05, Error: 'data'
+[2023-09-29 14:54:51,867] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/DAI (0.01%), Address: 0x47884ccf20765a6b3b53333b752b28bba48c5ea9, Error: 'data'
+[2023-09-29 14:54:52,355] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/MaticX (0.01%), Address: 0x2589469b7a72802ce02484f053cb6df869eb2689, Error: 'data'
+[2023-09-29 14:54:52,816] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0x29e32ce44f0375bc798b9965845e0db32f5017ce, Error: 'data'
+[2023-09-29 14:54:53,340] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/stMATIC (0.01%), Address: 0xcdedc76bcc6351275acdef823190453ec43b4edf, Error: 'data'
+[2023-09-29 14:54:54,161] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0x184a51465925ab8a0025e47a00cab6d3769b5487, Error: 'data'
+[2023-09-29 14:54:54,644] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x1c5d12ad73875cda81d1dd7b09b994ee3b31bfc5, Error: 'data'
+[2023-09-29 14:54:55,119] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/frxETH (0.05%), Address: 0x517e0971afe8c7633937715d9f3271e930bec372, Error: 'data'
+[2023-09-29 14:54:55,600] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x2be6f30d8b7cc563bbf2fa8cc48713409940adb5, Error: 'data'
+[2023-09-29 14:54:56,064] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x44903e0b2a017f9a9bd299925649e1d1896de409, Error: 'data'
+[2023-09-29 14:54:56,563] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0x5b1c4eb4e2a8faa1dcda68f9f29e00d586f57495, Error: 'data'
+[2023-09-29 14:54:57,065] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0x80e0b01044978b45accf33a74586c02ec6473f48, Error: 'data'
+[2023-09-29 14:54:57,549] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xe193c653b6030a9bb443ae7c6ef6e35d93348f98, Error: 'data'
+[2023-09-29 14:54:58,022] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/miMATIC (0.3%), Address: 0xea3e41a9f4eb139ba61bf8566aa1baad195c5511, Error: 'data'
+[2023-09-29 14:54:58,491] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x2a64d756c45e4dce6ab8be73ece8e6c929f65b47, Error: 'data'
+[2023-09-29 14:54:59,164] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: oRETRO/RETRO (1%), Address: 0x21e84500d8503fd5e48523ba046032a37bbc2d51, Error: 'data'
+[2023-09-29 14:54:59,663] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0x92a6576c750d94ba5156f035f5cd5c89c4c2f64d, Error: 'data'
+[2023-09-29 14:55:00,145] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x0e4ab9d6e7ed13d43b5877c4aa14e1f2151f79ed, Error: 'data'
+[2023-09-29 14:55:00,638] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0x4621dd5727ba5dc6ac5dce8a2bf754d6558217e4, Error: 'data'
+[2023-09-29 14:55:01,129] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0xcfcd44a154ac3c09187c7f14b2ec386ff3487a0a, Error: 'data'
+[2023-09-29 14:55:01,609] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0xb398868b8f58840a64405ef178fc504838ba9469, Error: 'data'
+[2023-09-29 14:55:02,095] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (0.3%), Address: 0xe89fd7b0199c5397c2814693d0206c19a92badda, Error: 'data'
+[2023-09-29 14:55:02,571] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x28552601cd3f786a40b110000e5ac115af415458, Error: 'data'
+[2023-09-29 14:55:03,048] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0xda59e221aa15007a8766d9bb1be622ffe9128f96, Error: 'data'
+[2023-09-29 14:55:03,588] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0x0af68a4679f49fde30e96046d5775f1b53ffc6ac, Error: 'data'
+[2023-09-29 14:55:04,118] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0xf36bd23e5c69d59cfa00a12d34cd9fabac3e3f64, Error: 'data'
+[2023-09-29 14:55:04,617] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xbfd344c1f8664b5e1a8be936ce9ae2dfd1073661, Error: 'data'
+[2023-09-29 14:55:05,107] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0xce58cd86a6043973a96a6a2a50ef1f6351d7dbce, Error: 'data'
+[2023-09-29 14:55:05,585] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0xbc427850ebb87a9158b6d48fcb16cbd732d8a844, Error: 'data'
+[2023-09-29 14:55:06,110] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x26304acfd64deea7f585fad9e56e4a5b2fa7443d, Error: 'data'
+[2023-09-29 14:55:06,582] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/STAR (0.01%), Address: 0xf10988a2443efad084a909271ad7a4e09b043f58, Error: 'data'
+[2023-09-29 14:55:07,054] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xb14780ba4f6575bf971c6c131e0682afe44f49d8, Error: 'data'
+[2023-09-29 14:55:07,562] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x58d9c906d69ef796271706017d317e84cb8127a8, Error: 'data'
+[2023-09-29 14:55:08,068] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (1%), Address: 0x150d0e48cd05628b43ad44bdd0984acacd44013c, Error: 'data'
+[2023-09-29 14:55:08,596] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/ERN (1%), Address: 0xbd4a066bf8f6ab0e64a499ba6219d02041569dca, Error: 'data'
+[2023-09-29 14:55:09,106] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: STAR/ERN (1%), Address: 0xb73995a68ac03f17f17d73299363af817b29859b, Error: 'data'
+[2023-09-29 14:55:09,588] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x3f8f3caeff393b1994a9968e835fd38ecba6c1be, Error: 'data'
+[2023-09-29 14:55:10,076] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0x33a77bf60c97f8dcaa06307c019862376fbc99bb, Error: 'data'
+[2023-09-29 14:55:10,556] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/STAR (0.3%), Address: 0x4e3019be228b980dff03b5a00ac9e736312be559, Error: 'data'
+[2023-09-29 14:55:11,050] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x9bea41c900394f83375b9198d04be6f63db00090, Error: 'data'
+[2023-09-29 14:55:11,545] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aeb0667b79584fbf6265b74a8cd22e1245fdc, Error: 'data'
+[2023-09-29 14:55:12,065] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4b895a0dd744b4893aa4370a8f7edbde5fd90e, Error: 'data'
+[2023-09-29 14:55:12,563] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x439e2d51ba26fa062a1e4f0edaa68f3b830ca6da, Error: 'data'
+[2023-09-29 14:55:13,096] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xcc72276de3bcc1b159f1b60a86b0211116022b42, Error: 'data'
+[2023-09-29 14:55:13,635] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0xb72395c6a7effbdc89aa9effb49797195e790287, Error: 'data'
+[2023-09-29 14:55:14,127] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44d18b2bac767cddb4cdbf, Error: 'data'
+[2023-09-29 14:55:14,621] 	ERROR 	69 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/IBEX (1%), Address: 0x53d8c25b3d130d2810591cdc7a41bd848bf79b63, Error: 'data'
+[2023-09-29 14:55:14,621] 	INFO 	117 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-29 18:37:18,762] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started

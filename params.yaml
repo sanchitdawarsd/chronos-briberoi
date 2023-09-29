@@ -1,16 +1,16 @@
 query:
-  fusion_subgraph: https://api.thegraph.com/subgraphs/name/ruvlol/univ3-test
+  fusion_subgraph: https://api.thegraph.com/subgraphs/name/pabheto/chronos-bribes-v3
   day_data_fusion_query:
     {
       "operationName": "uniswapDayDatas",
-      "variables": { "startTime": 1690329600, "skip": 0 },
+      "variables": { "startTime": 1681776000, "skip": 0 },
       "query": "query uniswapDayDatas($startTime: Int!, $skip: Int!) {\n  uniswapDayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    volumeUSD\n    feesUSD\n    tvlUSD\n    __typename\n  }\n}\n",
     }
   pair_data_fusion_query:
     {
       "operationName": "poolDayDatas",
-      "variables": { "pairAddress": "0", "skip": 0, "startTime": 1690329600 },
-      "query": "query pairDayDatasV3($pairAddress: Bytes!, $skip: Int!, $startTime: Int!) {\n  poolDayDatas(skip: $skip, orderBy: date, orderDirection: asc, where: {pool: $pairAddress, date_gt: $startTime}) {\n    id\n    date\n    tvlUSD\n    volumeUSD\n    volumeToken0\n    volumeToken1\n    token0Price\n    token1Price\n    feesUSD\n    __typename\n  }\n}",
+      "variables": { "poolAddress": "0", "skip": 0 },
+      "query": "query pairDayDatasV3($poolAddress: Bytes!, $skip: Int!) {\n  gauges(skip: $skip, where: {poolAddress: $poolAddress}) {\n    id\n   }\n}",
     }
 
 web3:
