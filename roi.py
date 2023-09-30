@@ -37,6 +37,7 @@ try:
     logger.info("Pair Data Fusion Started")
     # Request and Edit Pair Data
     ids_df = pd.read_csv(id_data)
+    #roi_df = pd.read_csv(roi_data)
     print(ids_df, "dat2a")
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
@@ -102,11 +103,20 @@ try:
                         int(reward["tokenAmount"])/10**decimal_to_find)*priceusd)
                     print(contract_address, reward["tokenAddress"], reward["tokenAmount"], rewardAmountUsd,
                           formatted_date, found_id)
+                    # new_data = pd.DataFrame({
+                    #     'Column1': [token_amount],
+                    #     'Column2': [token_address],
+                    #     # Add more columns and values as needed
+                    # })
+                    # combined_data = pd.concat(
+                    #     [roi_df, new_data], ignore_index=True)
+                    # combined_data.to_csv('roi_data.csv', index=False)
                     with open('output.txt', 'a') as file:
                         # Write data to the file
                         file.write(str(len(rewards)))
                         token_address = reward["tokenAddress"]
                         token_amount = reward["tokenAmount"]
+
                 # Create a string with the values separated by commas
                         data_to_write = f"{contract_address}, {rewardAmountUsd},{token_address},{token_amount} , {formatted_date}, {found_id}\n"
 
@@ -134,29 +144,10 @@ try:
                     logger.error(
                         "Error occurred during Pair Data Fusion process. Error: %s" % e, exc_info=True)
             df = pd.json_normalize(data)
-            # Load existing CSV data into a DataFrame (if any)
-existing_data = pd.read_csv('existing_data.csv')
-
-# Create a new DataFrame with the data to append
-new_data = pd.DataFrame({
-    'Column1': [value1],
-    'Column2': [value2],
-    # Add more columns and values as needed
-})
-
-# Concatenate the existing data and new data
-combined_data = pd.concat([existing_data, new_data], ignore_index=True)
-
-# Save the combined DataFrame back to the CSV file
-combined_data.to_csv('existing_data.csv', index=False)
             df["name"] = name
-            df["symbol"] = symbol_to_find
-            df["rewardAmountUsd"] = rewardAmountUsd
-            df["token_amount"] = token_amount
-            df["formatted_date"] = formatted_date
-            pairdata_fusion_df = pd.concat(
-                [pairdata_fusion_df, df], axis=0, ignore_index=True)
-            pairdata_fusion_df.reset_index(drop=True, inplace=True)
+            # pairdata_fusion_df = pd.concat(
+            #     [pairdata_fusion_df, df], axis=0, ignore_index=True)
+            # pairdata_fusion_df.reset_index(drop=True, inplace=True)
         except Exception as e:
             print(e)
             logger.error("Error occurred during Pair Data Fusion process. Pair: %s, Address: %s, Error: %s" % (
