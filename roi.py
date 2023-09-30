@@ -37,7 +37,7 @@ try:
     logger.info("Pair Data Fusion Started")
     # Request and Edit Pair Data
     ids_df = pd.read_csv(id_data)
-    #roi_df = pd.read_csv(roi_data)
+    roi_df = pd.read_csv(roi_data)
     print(ids_df, "dat2a")
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()

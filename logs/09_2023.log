@@ -40259,3 +40259,74 @@ Traceback (most recent call last):
   File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
 [2023-09-30 16:59:25,511] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:00:40,168] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:00:47,357] 	ERROR 	144 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:00:53,808] 	ERROR 	144 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:01:07,579] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:01:08,450] 	ERROR 	202 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 40, in <module>
+    roi_df = pd.read_csv(roi_data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2023-09-30 17:01:35,135] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:01:36,044] 	ERROR 	202 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: No columns to parse from file
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 40, in <module>
+    roi_df = pd.read_csv(roi_data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
