@@ -1,17 +1,14 @@
 import requests
 import pandas as pd
 import yaml
-import json
-import os
 from datetime import datetime, timezone, timedelta
 from application_logging.logger import logger
-import gspread
 from web3 import Web3
 from web3.middleware import validation
+from flask import Flask, jsonify
 
 # Params
 params_path = "params.yaml"
-
 
 def read_params(config_path):
     with open(config_path) as yaml_file:
@@ -26,12 +23,14 @@ try:
     # Params Data
     subgraph = config["query"]["fusion_subgraph"]
     id_data = config["files"]["id_data"]
+    briberoi_data = config["files"]["bribe_data"]
     roi_data = config["files"]["roi_data"]
     pair_data_fusion_query = config["query"]["pair_data_fusion_query"]
-    epoch_daily_csv = config["files"]["epoch_daily_data"]
+    epoch_csv = config["files"]["epoch_data"]
     pair_data_fusion_csv = config["files"]["pair_data_fusion"]
     provider_url = config["web3"]["provider_url"]
     token_abi = config["web3"]["token_abi"]
+    starting_date = datetime(2023, 4, 19)  # Replace with your starting date
 
     # Pulling Pair Data
     logger.info("Pair Data Fusion Started")
@@ -58,6 +57,7 @@ try:
         return None
 
     pairdata_fusion_df = pd.DataFrame()
+    data_list = []
     for name, contract_address in zip(ids_df["symbol"], ids_df["address"]):
         try:
             pair_data_fusion_query["variables"]["poolAddress"] = contract_address.lower(
@@ -103,26 +103,23 @@ try:
                         int(reward["tokenAmount"])/10**decimal_to_find)*priceusd)
                     print(contract_address, reward["tokenAddress"], reward["tokenAmount"], rewardAmountUsd,
                           formatted_date, found_id)
-                    # new_data = pd.DataFrame({
-                    #     'Column1': [token_amount],
-                    #     'Column2': [token_address],
-                    #     # Add more columns and values as needed
-                    # })
-                    # combined_data = pd.concat(
-                    #     [roi_df, new_data], ignore_index=True)
-                    # combined_data.to_csv('roi_data.csv', index=False)
-                    with open('output.txt', 'a') as file:
-                        # Write data to the file
-                        file.write(str(len(rewards)))
-                        token_address = reward["tokenAddress"]
-                        token_amount = reward["tokenAmount"]
 
-                # Create a string with the values separated by commas
-                        data_to_write = f"{contract_address}, {rewardAmountUsd},{token_address},{token_amount} , {formatted_date}, {found_id}\n"
+                    # 24 hours in a day, 3600 seconds in an hour
+                    time_difference = (
+                        int(reward["timestamp"]) - starting_date.timestamp()) / (24 * 3600)
+                    epoch = int(time_difference / 7)
 
-                # Write the string to the file
-                        file.write(data_to_write)
-                        file.write('\n\n\n')
+                    new_data = {
+                        'poolSymbol': name,
+                        'poolAddress': contract_address,
+                        'rewardSymbol': symbol_to_find,
+                        'rewardAddress': reward["tokenAddress"],
+                        'rewardUsd': rewardAmountUsd,
+                        "epoch": epoch,
+                        'id': found_id
+                        # Add more columns and values as needed
+                    }
+                    data_list.append(new_data)
 
                 except Exception as e:
                     priceusd = 1
@@ -130,73 +127,31 @@ try:
                         int(reward["tokenAmount"])/10**decimal_to_find)*priceusd)
                     print(contract_address, reward["tokenAddress"], reward["tokenAmount"], rewardAmountUsd,
                           formatted_date, found_id)
-                    with open('output.txt', 'a') as file:
-                        # Write data to the file
-                        file.write(str(len(rewards)))
-                        token_address = reward["tokenAddress"]
-                        token_amount = reward["tokenAmount"]
-                # Create a string with the values separated by commas
-                        data_to_write = f"{contract_address}, {rewardAmountUsd},{token_address},{token_amount} , {formatted_date}, {found_id}\n"
-
-                # Write the string to the file
-                        file.write(data_to_write)
-                        file.write('\n\n\n')
+                    # 24 hours in a day, 3600 seconds in an hour
+                    time_difference = (
+                        int(reward["timestamp"]) - starting_date.timestamp()) / (24 * 3600)
+                    epoch = int(time_difference / 7)
+                    new_data = {
+                        'poolSymbol': name,
+                        'poolAddress': contract_address,
+                        'rewardSymbol': symbol_to_find,
+                        'rewardAddress': reward["tokenAddress"],
+                        'rewardUsd': rewardAmountUsd,
+                        'id': found_id,
+                        'epoch': epoch
+                        # Add more columns and values as needed
+                    }
+                    data_list.append(new_data)
                     logger.error(
                         "Error occurred during Pair Data Fusion process. Error: %s" % e, exc_info=True)
-            df = pd.json_normalize(data)
-            df["name"] = name
-            # pairdata_fusion_df = pd.concat(
-            #     [pairdata_fusion_df, df], axis=0, ignore_index=True)
-            # pairdata_fusion_df.reset_index(drop=True, inplace=True)
+            df = pd.DataFrame(data_list)
+            df.to_csv('data/roi_data.csv', index=False)
+
         except Exception as e:
             print(e)
             logger.error("Error occurred during Pair Data Fusion process. Pair: %s, Address: %s, Error: %s" % (
                 name, contract_address, e))
-    # epoch_data = pd.read_csv(epoch_daily_csv)
-    # epoch_data["date"] = epoch_data["date"].apply(
-    #     lambda date: datetime.strptime(date, "%d-%m-%Y").date())
-
-    # pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(
-    #     lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
-    # pairdata_fusion_df = pd.merge(pairdata_fusion_df, ids_df[[
-    #                               "symbol", "underlyingPool", "type"]], how="left", left_on="name", right_on="symbol")
-    # pairdata_fusion_df.drop("symbol", axis=1, inplace=True)
-    # pairdata_fusion_df = pd.merge(
-    #     pairdata_fusion_df, epoch_data[["date", "epoch"]], how="left", on="date")
-    # pairdata_fusion_df.sort_values("date", ascending=True, inplace=True)
-    # pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(
-    #     lambda date: datetime.strftime(date, "%Y-%m-%d"))
-
-    # pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
-    # drop_index = pairdata_fusion_old[pairdata_fusion_old['date'] > datetime.fromtimestamp(
-    #     timestamp).strftime(format='%Y-%m-%d')].index
-    # index_list = drop_index.to_list()
-    # index_list = list(map(lambda x: x + 2, index_list))
-    # pairdata_fusion_df['__typename'] = 'Fusion'
-    # pairdata_fusion_df = pairdata_fusion_df[['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',
-    #                                          'token0Price', 'token1Price', 'feesUSD', '__typename', 'name', 'underlyingPool', 'type', 'epoch']]
-    # pairdata_fusion_df = pairdata_fusion_df.astype({'tvlUSD': 'float', 'volumeUSD': 'float', 'volumeToken0': 'float',
-    #                                                'volumeToken1': 'float', 'token0Price': 'float', 'token1Price': 'float', 'feesUSD': 'float'})
-    # df_values = pairdata_fusion_df.values.tolist()
-
-    # # Write to GSheets
-    # credentials = os.environ["GKEY"]
-    # credentials = json.loads(credentials)
-    # gc = gspread.service_account_from_dict(credentials)
-
-    # # Open a google sheet
-    # sheetkey = config["gsheets"]["pair_data_fusion_sheet_key"]
-    # gs = gc.open_by_key(sheetkey)
-
-    # # Select a work sheet from its name
-    # worksheet1 = gs.worksheet("Master")
-    # if index_list != []:
-    #     worksheet1.delete_rows(index_list[0], index_list[-1])
-
-    # # Append to Worksheet
-    # gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {
-    #                  "values": df_values})
-
+  
     logger.info("Pair Data Fusion Ended")
 except Exception as e:
     logger.error(

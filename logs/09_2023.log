@@ -40330,3 +40330,908 @@ Traceback (most recent call last):
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
+[2023-09-30 17:04:32,897] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:04:59,594] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:05:03,104] 	ERROR 	144 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: name 'token_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 107, in <module>
+    'Column1': [token_amount],
+                ^^^^^^^^^^^^
+NameError: name 'token_amount' is not defined
+[2023-09-30 17:05:09,690] 	ERROR 	144 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:05:12,667] 	ERROR 	144 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:05:40,937] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:05:44,954] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: name 'token_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 107, in <module>
+    'Column1': [token_amount],
+                ^^^^^^^^^^^^
+NameError: name 'token_amount' is not defined
+[2023-09-30 17:05:48,528] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:07:01,295] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:07:06,800] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: name 'token_address' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 108, in <module>
+    'address': [token_address],
+                ^^^^^^^^^^^^^
+NameError: name 'token_address' is not defined
+[2023-09-30 17:07:10,155] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:07:15,360] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:11:54,480] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:12:07,786] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:12:10,495] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:12:20,294] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:12:29,126] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:12:32,344] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:12:55,757] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:12:56,563] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:13:01,183] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:13:02,459] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:13:05,352] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:10,632] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:12,180] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:13,189] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:14,031] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:14,909] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:15,784] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:16,682] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:17,501] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:18,267] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:19,144] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:21,948] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:24,836] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:36,522] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:14:42,042] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:44,228] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:55,385] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:14:56,184] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:15:00,532] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:15:01,593] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:15:05,300] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:17:36,924] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:17:40,621] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 111, in <module>
+    combined_data = roi_data.append(
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+[2023-09-30 17:17:41,297] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 111, in <module>
+    combined_data = roi_data.append(
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+[2023-09-30 17:17:41,820] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 111, in <module>
+    combined_data = roi_data.append(
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+[2023-09-30 17:17:42,384] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 111, in <module>
+    combined_data = roi_data.append(
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+[2023-09-30 17:17:43,280] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:17:46,693] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'append'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 111, in <module>
+    combined_data = roi_data.append(
+                    ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+[2023-09-30 17:18:40,610] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:18:52,305] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:18:54,203] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:22:09,868] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:22:16,120] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:22:18,161] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:26:27,888] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:26:36,393] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:26:39,030] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:27:42,397] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:27:56,172] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:27:58,979] 	ERROR 	122 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:35:14,088] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:35:30,713] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:35:34,958] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:35:58,453] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:35:59,218] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:36:00,201] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:36:01,092] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:36:03,194] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:39:27,389] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:39:36,621] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:39:38,588] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:40:10,224] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:40:10,998] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:40:11,884] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:40:14,108] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:40:16,283] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:41:22,382] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:41:30,319] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:41:33,933] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:11,116] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:42:22,257] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:26,093] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:39,020] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:39,577] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:40,393] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:42:41,009] 	ERROR 	126 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:46:31,356] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:46:44,369] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:46:46,813] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:47:08,796] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:47:09,376] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:47:11,644] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:47:12,778] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:47:14,620] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:36,544] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:37,325] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:38,109] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:39,041] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:39,995] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:40,749] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:41,692] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:42,732] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:43,491] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:44,992] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:46,106] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:53,022] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:48:58,006] 	ERROR 	139 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-ORBS/USDC.e, Address: 0x3bB389cE18e9B9Cfd242fF6f88c9acce4AEC4Bb4, Error: list index out of range
+[2023-09-30 17:49:52,375] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:50:54,908] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:50:56,052] 	ERROR 	130 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:21,015] 	INFO 	37 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 17:52:31,418] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:33,209] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:49,562] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:50,318] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:51,448] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:52,104] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 17:52:54,728] 	ERROR 	134 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 102, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:16,747] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 18:10:27,211] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:31,166] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:54,791] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:57,511] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:58,463] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:10:59,597] 	ERROR 	147 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 103, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-09-30 18:16:01,503] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 18:16:03,273] 	ERROR 	178 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 158, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-09-30 18:23:13,645] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 18:23:15,302] 	ERROR 	178 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 158, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-09-30 18:24:19,679] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 18:24:20,648] 	INFO 	176 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-30 18:24:36,633] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 18:24:37,565] 	INFO 	176 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-30 20:17:07,070] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:17:53,336] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:17:55,257] 	INFO 	176 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-30 20:27:00,290] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:28:05,518] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:28:06,770] 	ERROR 	195 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 160, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:29:13,792] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:29:14,798] 	ERROR 	195 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 160, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:34:18,232] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:34:19,954] 	ERROR 	195 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 160, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:34:39,813] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:35:34,415] 	INFO 	38 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:35:35,462] 	ERROR 	196 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 160, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:39:44,523] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:39:46,160] 	ERROR 	197 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:40:01,116] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:40:02,320] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:42:13,515] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:42:27,616] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:43:39,236] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:43:40,305] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:44:31,077] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:44:32,100] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:44:41,230] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:44:42,109] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 162, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:47:13,253] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:47:14,955] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:48:10,407] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:48:11,410] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads("5t4geuG-Z674HztolwlmM35Q")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:48:31,776] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:48:32,709] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: the JSON object must be str, bytes or bytearray, not set
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads({'5t4geuG-Z674HztolwlmM35Q'})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not set
+[2023-09-30 20:48:41,541] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:48:42,670] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:49:12,601] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:49:13,545] 	ERROR 	197 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 160, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:49:55,899] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:49:56,991] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 159, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-09-30 20:50:51,056] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:50:52,179] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:51:00,628] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:51:01,505] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-09-30 20:51:14,721] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-09-30 20:51:15,982] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 163, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'

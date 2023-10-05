@@ -39,18 +39,19 @@ try:
 
     # Read Epoch Data
     epoch_data = pd.read_csv(epoch_csv)
-    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
-
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"]
+    print(epoch,"hey")
     # Read IDS Data
     ids_df = pd.read_csv(id_data)
     ids_df["epoch"] = epoch
     ids_df["gauge.address"] = ids_df["gauge.address"].str.lower()
-
+    
     # Read Dune Data and wrangling
     API_KEY = os.environ["DUNE"]
-    HEADER = {"x-dune-api-key": API_KEY}
+    HEADER = {"x-dune-api-key": "CvNy9yL4K0vTOFxBbmkPO7SRsFvP9SeO"}
 
     BASE_URL = "https://api.dune.com/api/v1/"
+    print("hey")
 
     def make_api_url(module, action, ID):
         url = BASE_URL + module + "/" + ID + "/" + action
@@ -73,6 +74,7 @@ try:
     def get_query_results(execution_id):
         url = make_api_url("execution", "results", execution_id)
         response = get(url, headers=HEADER)
+        print(response)
         return response
 
     def check_query_completion(execution_id):

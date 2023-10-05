@@ -6,6 +6,12 @@ query:
       "variables": { "startTime": 1681776000, "skip": 0 },
       "query": "query uniswapDayDatas($startTime: Int!, $skip: Int!) {\n  uniswapDayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    volumeUSD\n    feesUSD\n    tvlUSD\n    __typename\n  }\n}\n",
     }
+  id_data_fusion_query:
+    {
+      "operationName": "gauges",
+      "variables": { "skip": 0 },
+      "query": "query ids($skip: Int! ) {\n  gauges(skip: $skip) {\n    id\n  poolAddress\n externalBribe{ id\n }\n internalBribe{ id\n } }\n}",
+    }
   pair_data_fusion_query:
     {
       "operationName": "gauges",
@@ -136,10 +142,10 @@ api:
   fusion_api: https://retro-backend.stabl.finance/api/v1/fusions
 
 files:
-  roi_data: https://raw.githubusercontent.com/sanchitdawarsd/chronos-briberoi/main/data/roi_data.csv
-  epoch_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/epoch.csv
+  roi_data: ./data/roi_data.csv
+  epoch_data: ./data/epoch.csv
   epoch_daily_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/epoch_daily.csv
-  id_data: https://raw.githubusercontent.com/sanchitdawarsd/chronos-briberoi/main/data/ids_data.csv
+  id_data: ./data/ids_data.csv
   daily_data_fusion: https://docs.google.com/spreadsheets/d/1ksiupEzlwVBMmrE9OkBnoFeBkLT0_iOpR3p6OY4MPZI/export?format=csv
   pair_data_fusion: https://docs.google.com/spreadsheets/d/1j0242nHZD9Qz01mwYOLUfc9uLL17_2IKq5tx5dxw_Dg/export?format=csv
   bribe_data: R-https://docs.google.com/spreadsheets/d/1RgjgydeakduCgww1kyJdAJGI594VjJCVsm8-dNUeSzM/export?format=csv

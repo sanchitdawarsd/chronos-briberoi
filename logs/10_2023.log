@@ -1,0 +1,1632 @@
+[2023-10-01 12:34:29,105] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 12:34:30,682] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Extra data: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 161, in <module>
+    credentials = json.loads(credentials)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 2 (char 1)
+[2023-10-01 12:35:07,771] 	INFO 	39 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 12:35:08,601] 	ERROR 	198 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 163, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+[2023-10-01 13:26:46,762] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:26:48,954] 	ERROR 	205 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 166, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-10-01 13:27:24,460] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:27:25,952] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-10-01 13:27:25,953] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:27:25,953] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:27:26,555] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:27:28,060] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:27:28,082] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:27:48,660] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-10-01 13:27:48,845] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'GKEY'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    credentials = os.environ["GKEY"]
+                  ~~~~~~~~~~^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GKEY'
+[2023-10-01 13:28:09,161] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:28:10,816] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-10-01 13:28:10,816] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:28:10,817] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:28:11,455] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:28:13,239] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:28:13,254] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:29:27,621] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 172, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+[2023-10-01 13:29:27,806] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 172, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+[2023-10-01 13:29:34,480] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:29:36,128] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-10-01 13:29:36,128] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:29:36,129] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:29:36,748] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:29:38,296] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:29:38,313] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:31:19,509] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 172, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+[2023-10-01 13:31:19,691] 	ERROR 	207 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'keys'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 172, in <module>
+    gc = gspread.service_account_from_dict(credentials)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/gspread/auth.py", line 341, in service_account_from_dict
+    creds = ServiceAccountCredentials.from_service_account_info(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/oauth2/service_account.py", line 243, in from_service_account_info
+    signer = _service_account_info.from_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/google/auth/_service_account_info.py", line 49, in from_dict
+    missing = keys_needed.difference(six.iterkeys(data))
+                                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/six.py", line 599, in iterkeys
+    return iter(d.keys(**kw))
+                ^^^^^^
+AttributeError: 'str' object has no attribute 'keys'
+[2023-10-01 13:31:44,086] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:31:46,187] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-10-01 13:31:46,187] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:31:46,188] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:31:46,778] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:31:48,402] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:31:48,416] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:32:34,838] 	ERROR 	210 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:32:35,022] 	ERROR 	210 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:32:42,020] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:32:44,167] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+[2023-10-01 13:32:44,167] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:32:44,167] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:32:44,749] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:32:46,273] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:32:46,288] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:32:50,463] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:32:50] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:32:52,134] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:32:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-10-01 13:37:40,275] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:37:40] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:37:43,131] 	ERROR 	210 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:37:43,317] 	ERROR 	210 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:37:45,148] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:37:45,945] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+[2023-10-01 13:37:45,946] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:37:45,946] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:37:46,576] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:37:47,093] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:37:47,108] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:37:48,663] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:37:48] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:40:00,142] 	INFO 	96 	_internal.py 	_log() 	 * Detected change in '/Users/sanchitdawar/Desktop/Retro-Data/roi.py', reloading
+[2023-10-01 13:40:00,270] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:40:00,978] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:40:02,753] 	ERROR 	210 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:40:05,354] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:40:23,663] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:28,285] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:43,454] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:44,298] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:46,219] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:47,333] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:40:49,877] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:43,045] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:44,664] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:47,018] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:47,878] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:48,940] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:49,775] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:50,627] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:51,433] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:53,263] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:54,185] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:55,207] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:41:58,484] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:42:02,043] 	ERROR 	157 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-ORBS/USDC.e, Address: 0x3bB389cE18e9B9Cfd242fF6f88c9acce4AEC4Bb4, Error: list index out of range
+[2023-10-01 13:42:39,650] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:29,942] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:31,095] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:32,284] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:33,204] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:34,123] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:35,322] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:36,890] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:38,130] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:38,958] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:41,605] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:42,454] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:43,250] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:44,585] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:45,406] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:46,309] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:47,498] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+[2023-10-01 13:43:47,498] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:43:47,498] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:43:48,086] 	INFO 	41 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:43:56,551] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:43:59,123] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:09,965] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:10,992] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:11,988] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:13,105] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:15,618] 	ERROR 	150 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 106, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:44:38,473] 	ERROR 	173 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 168, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:48:25,941] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 13:48:32,969] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:36,007] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:47,356] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:48,239] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:49,156] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:50,461] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:48:54,009] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:42,981] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:43,762] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:45,030] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:45,956] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:47,493] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:48,595] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:49,396] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:50,197] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:51,792] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:53,336] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:54,355] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:49:57,496] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:50:01,179] 	ERROR 	152 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-ORBS/USDC.e, Address: 0x3bB389cE18e9B9Cfd242fF6f88c9acce4AEC4Bb4, Error: list index out of range
+[2023-10-01 13:50:23,581] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+[2023-10-01 13:50:23,581] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:50:23,581] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:50:23,892] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:50:23,899] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:50:38,682] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:50:57,158] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:50:57] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:51:12,979] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:51:12] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:51:16,021] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:51:16] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:51:22,706] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:23,636] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:24,541] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:25,903] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:26,823] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:27,843] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:29,283] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:30,105] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:31,744] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:31,991] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:51:31] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:51:34,203] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:35,782] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:37,166] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:38,189] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:39,213] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:40,751] 	ERROR 	145 	roi.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'market_data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/roi.py", line 101, in <module>
+    priceusd = pricedata["market_data"]["current_price"]["usd"]
+               ~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'market_data'
+[2023-10-01 13:51:42,053] 	INFO 	156 	roi.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-01 13:52:33,949] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:52:33] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:52:56,387] 	ERROR 	32 	app.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/app.py", line 29, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:52:56,463] 	ERROR 	32 	app.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/app.py", line 29, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:52:57,505] 	INFO 	96 	_internal.py 	_log() 	[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+[2023-10-01 13:52:57,505] 	INFO 	96 	_internal.py 	_log() 	[33mPress CTRL+C to quit[0m
+[2023-10-01 13:52:57,505] 	INFO 	96 	_internal.py 	_log() 	 * Restarting with stat
+[2023-10-01 13:52:57,844] 	WARNING 	96 	_internal.py 	_log() 	 * Debugger is active!
+[2023-10-01 13:52:57,848] 	INFO 	96 	_internal.py 	_log() 	 * Debugger PIN: 111-909-003
+[2023-10-01 13:53:01,990] 	INFO 	96 	_internal.py 	_log() 	127.0.0.1 - - [01/Oct/2023 13:53:01] "GET /api/data HTTP/1.1" 200 -
+[2023-10-01 13:54:33,564] 	ERROR 	32 	app.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/app.py", line 29, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 13:54:33,639] 	ERROR 	32 	app.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'set' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/app.py", line 29, in <module>
+    port = app.url_map._rules[0].arguments['port']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'set' object is not subscriptable
+[2023-10-01 14:27:38,067] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:27:38,878] 	ERROR 	133 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:29:55,769] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:29:55,771] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:29:59,075] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:29:59,078] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:30:10,163] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:30:10,165] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:30:20,691] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:30:20,693] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:30:33,861] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:30:33,864] 	ERROR 	136 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 43, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:30:47,870] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:30:47,872] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:31:00,475] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:31:01,374] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: 'gauge.address'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'gauge.address'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 47, in <module>
+    ids_df["gauge.address"] = ids_df["gauge.address"].str.lower()
+                              ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'gauge.address'
+[2023-10-01 14:31:25,810] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:31:25,812] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 42, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-01 14:31:32,782] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-10-01 14:31:33,266] 	ERROR 	135 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: 'gauge.address'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'gauge.address'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/emissions_data.py", line 47, in <module>
+    ids_df["gauge.address"] = ids_df["gauge.address"].str.lower()
+                              ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'gauge.address'
+[2023-10-04 16:07:16,414] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:07:16,421] 	ERROR 	102 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:11:44,715] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:11:44,737] 	ERROR 	102 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:12:05,802] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:12:05,805] 	ERROR 	102 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:12:22,429] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:12:22,432] 	ERROR 	104 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 57, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:13:51,643] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-04 16:15:22,442] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:15:22,445] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:15:46,918] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:15:47,560] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: name 'epoch' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+                       ^^^^^
+NameError: name 'epoch' is not defined
+[2023-10-04 16:16:24,405] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:17:13,841] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:17:15,109] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: 'gauge.bribe'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'gauge.bribe'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 72, in <module>
+    for bribe in vote_df["gauge.bribe"]:
+                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'gauge.bribe'
+[2023-10-04 16:18:10,748] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:18:11,338] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Length of values (0) does not match length of index (40)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3980, in __setitem__
+    self._set_item(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4174, in _set_item
+    value = self._sanitize_column(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4915, in _sanitize_column
+    com.require_length_match(value, self.index)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/common.py", line 571, in require_length_match
+    raise ValueError(
+ValueError: Length of values (0) does not match length of index (40)
+[2023-10-04 16:18:14,618] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:18:15,156] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Length of values (0) does not match length of index (40)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3980, in __setitem__
+    self._set_item(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4174, in _set_item
+    value = self._sanitize_column(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4915, in _sanitize_column
+    com.require_length_match(value, self.index)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/common.py", line 571, in require_length_match
+    raise ValueError(
+ValueError: Length of values (0) does not match length of index (40)
+[2023-10-04 16:18:32,258] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:18:32,261] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:18:38,319] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:18:38,801] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Length of values (0) does not match length of index (40)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3980, in __setitem__
+    self._set_item(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4174, in _set_item
+    value = self._sanitize_column(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4915, in _sanitize_column
+    com.require_length_match(value, self.index)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/common.py", line 571, in require_length_match
+    raise ValueError(
+ValueError: Length of values (0) does not match length of index (40)
+[2023-10-04 16:19:07,818] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:21:29,237] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:21:29,817] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Length of values (0) does not match length of index (40)
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3980, in __setitem__
+    self._set_item(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4174, in _set_item
+    value = self._sanitize_column(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4915, in _sanitize_column
+    com.require_length_match(value, self.index)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/common.py", line 571, in require_length_match
+    raise ValueError(
+ValueError: Length of values (0) does not match length of index (40)
+[2023-10-04 16:21:37,272] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:21:37,275] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:21:49,932] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:22:11,048] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:22:11,051] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2263, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2273, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"][0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/series.py", line 981, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/series.py", line 1089, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+[2023-10-04 16:22:27,724] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:22:28,239] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Cannot set a DataFrame with multiple columns to the single column epoch
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3970, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4125, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column epoch
+[2023-10-04 16:22:53,257] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:22:53,260] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 56, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-10-04 16:23:03,425] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:23:03,926] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: name 'epoch' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+                       ^^^^^
+NameError: name 'epoch' is not defined
+[2023-10-04 16:23:20,277] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 16:23:20,886] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: name 'epoch' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+                       ^^^^^
+NameError: name 'epoch' is not defined
+[2023-10-04 17:31:26,963] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 17:31:27,851] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Cannot set a DataFrame with multiple columns to the single column epoch
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3970, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4125, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column epoch
+[2023-10-04 17:31:47,662] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 17:31:48,138] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Cannot set a DataFrame with multiple columns to the single column epoch
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3970, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4125, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column epoch
+[2023-10-04 17:46:32,567] 	INFO 	36 	roi.py 	<module>() 	Pair Data Fusion Started
+[2023-10-04 17:46:36,435] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:46:38,030] 	INFO 	39 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 17:46:48,429] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:46:50,006] 	INFO 	39 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 17:47:30,281] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:47:31,063] 	ERROR 	36 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 28, in <module>
+    data = response.json()["data"]
+           ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+[2023-10-04 17:47:37,125] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:47:37,842] 	ERROR 	36 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 30, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+                               ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+[2023-10-04 17:48:16,579] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:48:17,236] 	ERROR 	36 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 30, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+                               ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+[2023-10-04 17:48:49,645] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:49:03,893] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:49:19,333] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:49:43,362] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:51:23,180] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:51:34,611] 	INFO 	39 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 17:51:52,613] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:52:53,326] 	ERROR 	43 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 27, in <module>
+    data = response.json()["data"]
+           ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+[2023-10-04 17:53:01,158] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:53:01,816] 	ERROR 	43 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 27, in <module>
+    data = response.json()["data"]
+           ~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'data'
+[2023-10-04 17:53:12,723] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:53:14,287] 	INFO 	41 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 17:54:13,352] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:54:14,778] 	INFO 	41 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 17:54:26,704] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:54:27,449] 	ERROR 	37 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 31, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 17:54:40,005] 	INFO 	22 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 17:54:41,471] 	ERROR 	37 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 31, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 18:02:43,883] 	INFO 	23 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 18:03:05,025] 	ERROR 	63 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 57, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 18:04:40,802] 	INFO 	23 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 18:05:01,881] 	ERROR 	63 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 57, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 18:08:30,075] 	INFO 	24 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 18:08:31,247] 	ERROR 	66 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 60, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 18:10:52,772] 	INFO 	24 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 18:10:53,839] 	ERROR 	66 	id_build.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/id_build.py", line 60, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-10-04 18:14:06,507] 	INFO 	32 	id_build.py 	<module>() 	ID Data Started
+[2023-10-04 18:14:40,586] 	INFO 	71 	id_build.py 	<module>() 	ID Data Ended
+[2023-10-04 18:15:50,767] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:15:51,638] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Cannot set a DataFrame with multiple columns to the single column epoch
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3970, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4125, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column epoch
+[2023-10-04 18:16:17,974] 	INFO 	37 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:16:17,978] 	ERROR 	103 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Cannot set a DataFrame with multiple columns to the single column epoch
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 61, in <module>
+    vote_df["epoch"] = epoch
+    ~~~~~~~^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3970, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 4125, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column epoch
+[2023-10-04 18:26:00,926] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:26:01,857] 	ERROR 	106 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: 'gauge.bribe'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'gauge.bribe'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 75, in <module>
+    for bribe in vote_df["gauge.bribe"]:
+                 ~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'gauge.bribe'
+[2023-10-04 18:46:57,113] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:46:57,133] 	ERROR 	108 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:47:32,850] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:47:32,860] 	ERROR 	108 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:48:04,980] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:48:04,990] 	ERROR 	108 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:49:05,710] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:49:05,719] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:49:30,067] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:49:31,327] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: execution reverted
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 261, in normalize_address
+    validate_name_has_address(ens, address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/ens.py", line 52, in validate_name_has_address
+    addr = ens.address(name)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/ens/ens.py", line 153, in address
+    r = self.resolver(name)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/ens/ens.py", line 365, in resolver
+    return self._get_resolver(normal_name)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/ens/ens.py", line 437, in _get_resolver
+    resolver_addr = self.ens.caller.resolver(normal_name_to_hash(current_name))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/base_contract.py", line 989, in call_function
+    return fn(*args, **kwargs).call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 283, in call
+    return call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/utils.py", line 96, in call_contract_function
+    return_data = w3.eth.call(
+                  ^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 256, in call
+    return self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 275, in _durin_call
+    return self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/module.py", line 73, in caller
+    result = w3.manager.request_blocking(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/manager.py", line 250, in request_blocking
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/manager.py", line 209, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/manager.py", line 85, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz/functoolz.pyx", line 680, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 655, in cytoolz.functoolz.c_pipe
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/contract_error_handling.py", line 142, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+[2023-10-04 18:49:37,464] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:49:37,473] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:51:08,802] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:51:08,810] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Please ensure that this contract instance has an address.
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 84, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 279, in call
+    call_transaction = self._get_call_txparams(transaction)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/base_contract.py", line 470, in _get_call_txparams
+    raise ValueError(
+ValueError: Please ensure that this contract instance has an address.
+[2023-10-04 18:51:24,120] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:51:24,128] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: Please ensure that this contract instance has an address.
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 84, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 279, in call
+    call_transaction = self._get_call_txparams(transaction)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/base_contract.py", line 470, in _get_call_txparams
+    raise ValueError(
+ValueError: Please ensure that this contract instance has an address.
+[2023-10-04 18:51:53,268] 	INFO 	38 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:51:53,277] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:55:30,841] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:55:30,851] 	ERROR 	108 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 78, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:55:57,504] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:55:57,508] 	ERROR 	108 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: '_csv.reader' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 72, in <module>
+    print(csv_reader["row"])
+          ~~~~~~~~~~^^^^^^^
+TypeError: '_csv.reader' object is not subscriptable
+[2023-10-04 18:59:19,644] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:59:19,655] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:59:29,143] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:59:29,153] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 79, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 18:59:45,299] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 18:59:45,303] 	ERROR 	109 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: [Errno 2] No such file or directory: '/data/ids_data.csv'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 72, in <module>
+    with open("/data/ids_data.csv", mode='r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/ids_data.csv'
+[2023-10-04 19:00:02,992] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:00:02,996] 	ERROR 	111 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: [Errno 2] No such file or directory: '/data/ids_data.csv'
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 72, in <module>
+    with open("/data/ids_data.csv", mode='r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/ids_data.csv'
+[2023-10-04 19:01:02,546] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:01:02,556] 	ERROR 	112 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 82, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 19:01:44,646] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:01:44,658] 	ERROR 	114 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 84, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 19:02:57,445] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:02:57,454] 	ERROR 	116 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 86, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 19:03:44,295] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:03:44,299] 	ERROR 	130 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: name 'bribe' is not defined
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 80, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                                                ^^^^^
+NameError: name 'bribe' is not defined
+[2023-10-04 19:04:17,014] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:04:17,024] 	ERROR 	130 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 80, in <module>
+    contract_instance = w3.eth.contract(address=row["externalBribe"], abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 19:04:25,471] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:04:25,481] 	ERROR 	130 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 100, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+[2023-10-04 19:04:57,637] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:05:25,173] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:06:09,911] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:06:24,009] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:06:24,471] 	ERROR 	129 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: 
+Could not identify the intended function with name `totalSupplyAt`, positional arguments with type(s) `str` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `totalSupplyAt`: ['totalSupplyAt(uint256)']
+Function invocation failed due to no matching argument types.
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 90, in <module>
+    print(contract_instance.functions.totalSupplyAt("1696425092").call())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 238, in __call__
+    clone._set_function_info()
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/base_contract.py", line 425, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `totalSupplyAt`, positional arguments with type(s) `str` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `totalSupplyAt`: ['totalSupplyAt(uint256)']
+Function invocation failed due to no matching argument types.
+[2023-10-04 19:06:27,061] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:06:47,958] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:07:15,860] 	INFO 	35 	voteweight.py 	<module>() 	Vote Data Started
+[2023-10-04 19:08:04,397] 	ERROR 	129 	voteweight.py 	<module>() 	Error occurred during Vote Data process. Error: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
+Traceback (most recent call last):
+  File "/Users/sanchitdawar/Desktop/Retro-Data/voteweight.py", line 99, in <module>
+    contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/eth/eth.py", line 656, in contract
+    return ContractFactory(address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/contract/contract.py", line 425, in __init__
+    self.address = normalize_address(cast("ENS", _w3.ens), address)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/normalizers.py", line 263, in normalize_address
+    validate_address(address)
+  File "/Users/sanchitdawar/miniconda3/lib/python3.11/site-packages/web3/_utils/validation.py", line 183, in validate_address
+    raise InvalidAddress(
+web3.exceptions.InvalidAddress: ('web3.py only accepts checksum addresses. The software that gave you this non-checksum address should be considered unsafe, please file it as a bug on their platform. Try using an ENS name instead. Or, if you must accept lower safety, use Web3.to_checksum_address(lower_case_address).', '0xa32f25294eaed560a8b88ed61bc08fa987394572')
